@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Movies by Genre (starter)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+    <style>
+  body {
+    background-color: #141414;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #aaaaaa;
+    font-size: 15px;
+  }
+
+  .filters {
+    margin: 30px 0;
+  }
+
+  .filters button {
+    background-color: #292929;
+    color: white;
+    border: 1px solid #555555;
+    border-radius: 20px;
+    padding: 10px 22px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .filters button:hover {
+    background-color: #E50914;
+  }
+
+  #app svg {
+    width: 100%;
+    max-width: 900px;
+  }
+
+  #app svg text {
+    fill: #ffffff;
+  }
+  .legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 25px 0;
+  font-size: 14px;
+}
+
+.legend span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend i {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.movie-color {
+  background-color: #E50914;
+}
+
+.tv-color {
+  background-color: #38BDF8;
+}
+</style>
+
+
+</head>
+<body>
+    <!--
+      STARTER FILE: a bar chart of Netflix movies by genre.
+      This file lives in 06_netflix-added/starter-files/.
+      Open it with Live Server, with the whole 06_netflix-added
+      folder (or the whole repo) open in VS Code.
+    -->
+      <!-- Filter buttons to compare all titles, movies, and TV shows -->
+       <h1>Do Older Titles Still Attract Viewers on Netflix?</h1>
+<p>Average views by release period | January–June 2025</p>
+<!-- Color legend for the grouped bar chart -->
+<div class="legend">
+  <span><i class="movie-color"></i> Movies</span>
+  <span><i class="tv-color"></i> TV Shows</span>
+</div>
+
+</div>
+    <div id="app"></div>
+    <p style="text-align: center; color: #999; font-size: 12px; margin-top: 12px;">
+  Source: Netflix What We Watched (January–June 2025), with supplementary course datasets.
+</p>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./js/app-starter.js"></script>
+</body>
+</html>
